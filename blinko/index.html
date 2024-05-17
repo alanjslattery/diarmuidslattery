@@ -53,6 +53,7 @@
                 margin: 0px;
                 padding: 0px;
                 border: 0px;
+				background-color: #aaa;
             }
             div.gm4html5_login {
                 padding: 20px;
@@ -90,16 +91,16 @@
     
 
     <body>
-	<center>
         <div class="gm4html5_div_class" id="gm4html5_div_id">
             
             <!-- Builtin injector for splash screen -->
-            
+            <center>
 
             <!-- Create the canvas element the game draws to -->
-            <canvas id="canvas" width="1500" height="1500" >
+            <canvas style="background-color: #aaa;" id="canvas" width="1200" height="1200" >
                 <p>Your browser doesn't support HTML5 canvas.</p>
             </canvas>
+			</center>
         </div>
 
         <!-- Run the game code -->
@@ -108,10 +109,15 @@
         <!-- Builtin injector for injecting runner path -->
         
 
-        <script>window.onload = GameMaker_Init;</script>
+        <script>
+		var canvas = document.getElementById("canvas");
+		var ctx = canvas.getContext("2d");
+		ctx.fillStyle = "#aaa";
+		ctx.fillRect(0, 0, canvas.width, canvas.height);
+		window.onload = GameMaker_Init;
+		</script>
 
         <!-- Builtin injector for injecting google analytics code -->
-     <center>   
 
     </body>
 
