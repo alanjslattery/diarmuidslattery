@@ -39,7 +39,7 @@ h1, h2 {
     width: 200px;
     object-fit: cover;
     margin-right: 20px;
-    border: 3px solid #fff;
+    border: 3px solid #aaa;
 }
 .bio-text {
     flex: 1;
