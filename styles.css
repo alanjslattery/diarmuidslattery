@@ -70,6 +70,10 @@ h1, h2 {
     margin: 10px 0px 30px 0px;
 }
 
+.episodes li iframe {
+	border: 1px solid #666;
+}
+
 .episodes li p {
     margin-top: 0;
 	font-size: 0.8em;
