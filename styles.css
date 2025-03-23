@@ -1,0 +1,101 @@
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    background: #000;
+}
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #111;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+}
+header {
+    text-align: center;
+}
+.presenter-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 3px solid #fff;
+}
+h1, h2 {
+    color: #888;
+}
+.bio {
+    text-align: left;
+    margin-bottom: 50px;
+}
+.bio-content {
+    display: flex;
+    align-items: flex-start;
+}
+.bio-photo {
+    width: 200px;
+    object-fit: cover;
+    margin-right: 20px;
+    border: 3px solid #fff;
+}
+.bio-text {
+    flex: 1;
+}
+
+.bio-text h1 {
+	font-size: 2.4em;
+	padding-top: 0;
+	margin-top:0;
+}
+
+.bio-link {
+    color: #888;
+    text-decoration: none;
+}
+.bio-link:hover {
+    text-decoration: underline;
+}
+.episodes ul {
+    list-style: none;
+    padding: 0;
+}
+
+.episodes {
+	margin-bottom: 80px;
+}
+.episodes li {
+    margin: 10px 0px 30px 0px;
+}
+
+.episodes li p {
+    margin-top: 0;
+	font-size: 0.8em;
+    color: #bbb;	
+}
+
+.episodes li p b {
+	color: #fff;
+}
+
+
+.episodes a {
+    text-decoration: none;
+    color: #fff;
+}
+.episodes a:hover {
+    text-decoration: underline;
+}
+.contact {
+    text-align: left;
+    margin-top: 30px;
+}
+.contact a {
+    color: #fff;
+    text-decoration: none;
+}
+.contact a:hover {
+    text-decoration: underline;
+}
