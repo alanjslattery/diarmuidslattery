@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Musician & Radio Presenter</title>
-    <link rel="stylesheet" href="styles.css">
 	<link rel="icon" type="image/x-icon" href="logo.ico">
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/greghub/green-audio-player/dist/css/green-audio-player.min.css">
+	<script src="https://cdn.jsdelivr.net/gh/greghub/green-audio-player/dist/js/green-audio-player.min.js"></script>
+    <link rel="stylesheet" href="styles.css">	
 </head>
 <body>
     <div class="container">
@@ -26,7 +28,14 @@
         </section>
         <section class="episodes">
             <h2>Listen Back</h2>
-            <ul>
+			<h3>Highlight Reel</h3>
+			<div class="highlightreel">
+			    <audio>
+			        <source src="./audio/highlightreel_final.mp3" type="audio/mpeg">
+			    </audio>
+			</div>
+			
+			<h3>Previous Shows</h3>
             <ul>
                 <li>
 					<iframe width="100%" height="120" src="https://player-widget.mixcloud.com/widget/iframe/?hide_cover=1&feed=%2Fdslattery%2F" frameborder="0" ></iframe>
@@ -38,7 +47,6 @@
 					</p>
 				</li>				
             </ul>
-            </ul>
         </section>
         <section class="contact">
             <h2>Contact</h2>
@@ -46,5 +54,12 @@
 			<p>Instagram: <a href="https://www.instagram.com/slatterydiarmuid">@slatterydiarmuid</a></p>
         </section>
     </div>
+	
+<script src="../dist/js/green-audio-player.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            new GreenAudioPlayer('.highlightreel', { showDownloadButton: true, enableKeystrokes: true });
+        });
+    </script>	
 </body>
 </html>

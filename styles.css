@@ -10,7 +10,7 @@ body {
     margin: 40px auto;
     padding: 20px;
     background: #111;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0px 5px #333;
     border-radius: 8px;
 }
 header {
@@ -102,4 +102,29 @@ h1, h2 {
 }
 .contact a:hover {
     text-decoration: underline;
+}
+
+
+.green-audio-player {
+  width: 500px !important;
+  min-width: 300px;
+  height: 56px;
+  box-shadow: 0 4px 16px 0 rgba(0, 0, 0, .07);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 24px;
+  padding-right: 24px;
+  border-radius: 4px;
+  user-select: none !important;
+  -webkit-user-select: none !important;
+  background-color: #fff;
+}
+
+.green-audio-player .pin {
+    background-color: #666666 !important;
+}
+
+.highlightreel {
+	margin-bottom: 50px;
 }
